@@ -1,0 +1,432 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>LangChain Agent Interface</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Ask the Agent</h1>
+        <form method="post">
+            <input type="text" name="query" placeholder="Enter your question here" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html> --> 
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>LangChain Agent Interface</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Ask the Agent</h1>
+        <p>supporting:</p>
+        <ul>
+            <li>Web Searches</li>
+            <li>Wikipedia Searches</li>
+            <li>Database Queries</li>
+            <li>Academic Paper Searches (arXiv)</li>
+        </ul>
+        <form method="post">
+            <input type="text" name="query" placeholder="Enter your question here" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>-->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Agent 3D Interface</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(45deg, #000428, #004e92);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        .scene {
+            width: 300px;
+            height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite linear;
+        }
+
+        .container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            transform: rotateX(10deg) rotateY(20deg);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            transition: all 0.5s ease;
+        }
+
+        .container:hover {
+            transform: rotateX(0) rotateY(0) scale(1.05);
+        }
+
+        h1 {
+            color: #00ffff;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(0,255,255,0.5);
+            font-size: 1.8em;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid #00ffff;
+            border-radius: 5px;
+            color: #00ffff;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        input::placeholder {
+            color: rgba(0,255,255,0.5);
+        }
+
+        button {
+            background: #00ffff;
+            color: #000428;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0,255,255,0.5);
+        }
+
+        @keyframes rotate {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(0,255,255,0.5);
+            border-radius: 50%;
+            animation: particle-move 5s infinite linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="container">
+            <h1>AI Agent Explorer</h1>
+            <form method="post" action="/result">
+                <input type="text" name="query" placeholder="Ask your AI agent..." required>
+                <button type="submit">Explore</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function createParticles() {
+            const particlesContainer = document.createElement('div');
+            particlesContainer.classList.add('particles');
+            document.body.appendChild(particlesContainer);
+
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                particle.style.width = `${Math.random() * 3}px`;
+                particle.style.height = particle.style.width;
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- templates/index.html -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>AI Agent Interface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Your CSS styles here */
+        /* Include the CSS code provided in your interface code */
+        /* For brevity, I'm not repeating the CSS code here, but make sure to include it in your index.html */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Agent Explorer</h1>
+        <div class="support-list">
+            <div class="support-tag">Web Searches</div>
+            <div class="support-tag">Wikipedia</div>
+            <div class="support-tag">Database Queries</div>
+            <div class="support-tag">Academic Papers</div>
+        </div>
+        <form method="post">
+            <input type="text" name="query" placeholder="Ask me anything..." required>
+            <button type="submit">Explore</button>
+        </form>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Agent Interface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+
+        /* Container styling */
+        .container {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transform: rotateX(10deg);
+            transition: all 0.5s ease;
+            animation: fadeInContainer 0.8s ease forwards;
+        }
+
+        .container:hover {
+            transform: rotateX(0) scale(1.02);
+        }
+
+        /* Heading styling */
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            animation: slideDown 0.8s ease forwards;
+        }
+
+        /* Support tags styling */
+        .support-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .support-tag {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            opacity: 0;
+            animation: fadeInTags 0.6s ease forwards;
+        }
+
+        .support-tag:nth-child(1) { animation-delay: 0.2s; }
+        .support-tag:nth-child(2) { animation-delay: 0.4s; }
+        .support-tag:nth-child(3) { animation-delay: 0.6s; }
+        .support-tag:nth-child(4) { animation-delay: 0.8s; }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            animation: fadeInForm 1s ease forwards;
+            opacity: 0;
+            animation-delay: 1s;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            border: none;
+            background: rgba(255,255,255,0.2);
+            border-radius: 30px;
+            color: white;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+
+        input:focus {
+            box-shadow: 0 0 0 3px rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.25);
+        }
+
+        /* Button styling */
+        button {
+            background: linear-gradient(to right, #ff6b6b, #feca57);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+
+        button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Keyframes for animations */
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInTags {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes fadeInForm {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInContainer {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .support-tag {
+                font-size: 0.8em;
+                padding: 5px 10px;
+            }
+
+            input {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Agent Explorer</h1>
+        <div class="support-list">
+            <div class="support-tag">Web Searches</div>
+            <div class="support-tag">Wikipedia</div>
+            <div class="support-tag">Database Queries</div>
+            <div class="support-tag">Academic Papers</div>
+        </div>
+        <form method="post">
+            <input type="text" name="query" placeholder="Ask me anything..." required>
+            <button type="submit">Explore</button>
+        </form>
+    </div>
+</body>
+</html>
